@@ -1,0 +1,36 @@
+<div class="main_news_left">
+	<div class="main_news_left_box01">
+		<div class="main_news_left_box01_title">
+			<img src="images/info.jpg" />
+		</div>
+		<div class="main_news_left_box01_list">
+			<div class="main_news_left_box01_list_title">全部资讯</div>
+			<div class="main_news_left_box01_list_text">
+				<ul>
+			   <?php
+					$sql="select * from nclass order by n_id asc";
+					$sql = $dblink->findAll("nclass",array(),"","","","n_id asc");
+					foreach($sql as $row){
+				?>
+		 <li><img src="images/dot03.jpg" /><a href="newscl.php?cl=<?php echo $row["n_id"];?>" title="<?php echo $row["n_class"];?>"><?php echo $row["n_class"];?></a></li>
+				<?php }?>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main_news_left_box02">
+		<div class="main_news_left_box02_title"><span>热点新闻</span></div>
+		<div class="main_news_left_box02_list">
+			<ul>
+				<?php
+					$sql = $dblink->findAll("nnews",array(),"nbool= 1","","5","ndate desc");
+					$i=0;
+					foreach($sql as $row){					
+					$i=$i+1;
+				?>
+				<li><span><?php echo $i;?>.</span><a href="news_detail.php?id=<?php echo $row["nid"];?>" title="<?php echo $row["ntitle"];?>"><?php echo $row["ntitle"];?></a></li>
+				<?php }?>
+			</ul>
+		</div>
+	</div>
+</div>

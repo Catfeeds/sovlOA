@@ -1,0 +1,644 @@
+2012/08/31 01:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_root/upload/1313658478.gif".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('admin_root/uplo...')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/admin_root/upload/1313658478.gif
+2012/08/31 01:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('favicon.ico')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/08/31 01:14:18 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:14:18 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:14:18 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:14:18 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:14:18 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:14:32 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:14:32 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:14:32 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `customerservice`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `customerservice`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `nnews`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `nnews`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Nnews.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `nnews` `t` WHERE nbool=1 ORDER BY ndate desc LIMIT 5
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mb_step`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mb_step`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `school`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `school`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj!=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `excal`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `excal`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Excal.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `excal` `t` WHERE ex_kstime >="2012-08-31" LIMIT 20
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mxtj`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mxtj`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '一休带你逛') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '热门推荐') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `guanggao`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `guanggao`
+2012/08/31 01:14:32 [trace] [system.db.ar.CActiveRecord] Guanggao.findAll()
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `guanggao` `t` LIMIT 12
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `slide`
+2012/08/31 01:14:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `slide`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] WebStep.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT z_pic1,z_link1,z_pic2,z_link2,z_pic3,z_link3,z_pic4,z_link4,z_pic5,z_link5,z_pic6,z_link6 FROM `web_step` `t` WHERE z_id='0' LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcbname`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcbname`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcbname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcbname` `t`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcsname`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcsname`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='1'
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='2'
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='3'
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='4'
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='5'
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='6'
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ennews`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ennews`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Ennews.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ennews` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxsclass`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxsclass`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 6
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_news`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_news`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] YxNews.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_news` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_kaike`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_kaike`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] YxKaike.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_kaike` `t` ORDER BY yxk_id desc LIMIT 2
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_news`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_news`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] QpNews.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_news` `t` WHERE npic !='0' or npic !='' ORDER BY news_id desc LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_kaike_class`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_kaike_class`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] QpKaikeClass.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_kaike_class` `t` ORDER BY kk_id desc LIMIT 2
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `lxnews`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `lxnews`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Lxnews.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` WHERE lx_npic !='0'  or lx_npic !='' ORDER BY lx_nid desc LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Lxnews.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` ORDER BY lx_nid desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kkinfo`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kkinfo`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kkinfo.find()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` WHERE k_pic !='0' or k_pic !='' ORDER BY kid desc LIMIT 1
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Kkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` ORDER BY kid desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxkkinfo`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxkkinfo`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='36' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='35' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='34' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='33' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='32' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `teacher`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `teacher`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Teacher.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `teacher` `t` WHERE t_bool=1 LIMIT 2
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tjbiao`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tjbiao`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Tjbiao.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tjbiao` `t` WHERE tj_bool=1 LIMIT 5
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:14:33 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:14:33 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:14:33 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:14:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:14:33 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:14:33 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:14:36 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:14:36 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:14:36 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:14:36 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:14:36 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "coreMessages" application component
+2012/08/31 01:14:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_root/upload/1313658478.gif".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('admin_root/uplo...')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/admin_root/upload/1313658478.gif
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "errorHandler" application component
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:14:45 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:14:45 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:14:45 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:14:45 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:14:45 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:14:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:14:45 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:14:46 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:14:46 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:14:46 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:14:46 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:14:46 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "coreMessages" application component
+2012/08/31 01:14:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('favicon.ico')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "errorHandler" application component
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:14:55 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:14:55 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:14:55 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:14:55 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:14:55 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:14:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:14:55 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:16:54 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:16:54 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:16:54 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:16:54 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:16:54 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:17:03 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:17:03 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:17:04 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `customerservice`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `customerservice`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `nnews`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `nnews`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Nnews.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `nnews` `t` WHERE nbool=1 ORDER BY ndate desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mb_step`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mb_step`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `school`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `school`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj!=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `excal`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `excal`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Excal.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `excal` `t` WHERE ex_kstime >="2012-08-31" LIMIT 20
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mxtj`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mxtj`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '一休带你逛') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '热门推荐') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `guanggao`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `guanggao`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Guanggao.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `guanggao` `t` LIMIT 12
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `slide`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `slide`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] WebStep.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT z_pic1,z_link1,z_pic2,z_link2,z_pic3,z_link3,z_pic4,z_link4,z_pic5,z_link5,z_pic6,z_link6 FROM `web_step` `t` WHERE z_id='0' LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcbname`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcbname`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcbname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcbname` `t`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcsname`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcsname`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='1'
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='2'
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='3'
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='4'
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='5'
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='6'
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ennews`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ennews`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Ennews.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ennews` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxsclass`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxsclass`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 6
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_news`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_news`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] YxNews.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_news` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_kaike`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_kaike`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] YxKaike.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_kaike` `t` ORDER BY yxk_id desc LIMIT 2
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_news`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_news`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] QpNews.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_news` `t` WHERE npic !='0' or npic !='' ORDER BY news_id desc LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_kaike_class`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_kaike_class`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] QpKaikeClass.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_kaike_class` `t` ORDER BY kk_id desc LIMIT 2
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `lxnews`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `lxnews`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Lxnews.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` WHERE lx_npic !='0'  or lx_npic !='' ORDER BY lx_nid desc LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Lxnews.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` ORDER BY lx_nid desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kkinfo`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kkinfo`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kkinfo.find()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` WHERE k_pic !='0' or k_pic !='' ORDER BY kid desc LIMIT 1
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Kkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` ORDER BY kid desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxkkinfo`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxkkinfo`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='36' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='35' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='34' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='33' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='32' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `teacher`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `teacher`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Teacher.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `teacher` `t` WHERE t_bool=1 LIMIT 2
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tjbiao`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tjbiao`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Tjbiao.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tjbiao` `t` WHERE tj_bool=1 LIMIT 5
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:17:04 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:17:04 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:17:04 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:17:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:17:04 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:17:04 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:17:07 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:17:07 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:17:07 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:17:07 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:17:07 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "coreMessages" application component
+2012/08/31 01:17:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_root/upload/1313658478.gif".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('admin_root/uplo...')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/admin_root/upload/1313658478.gif
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "errorHandler" application component
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:17:16 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:17:16 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:17:16 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:17:16 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:17:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:17:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:17:17 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:17:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:17:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:17:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:17:17 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:17:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:17:17 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:17:17 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "coreMessages" application component
+2012/08/31 01:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('favicon.ico')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "errorHandler" application component
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:17:26 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:17:26 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:17:26 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:17:26 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:17:26 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:17:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:17:26 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:32:25 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `customerservice`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `customerservice`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Customerservice.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `customerservice` `t`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `nnews`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `nnews`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Nnews.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `nnews` `t` WHERE nbool=1 ORDER BY ndate desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mb_step`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mb_step`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `school`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `school`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] MbStep.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`mb_id` AS `t0_c0`, `t`.`s_name` AS `t0_c1`, `t`.`mb_tj` AS `t0_c2`, `t`.`mb_logo` AS `t0_c3`, `t`.`mb_banner` AS `t0_c4`, `t`.`mb_tel` AS `t0_c5`, `t`.`mb_kftime` AS `t0_c6`, `t`.`mb_adderss` AS `t0_c7`, `t`.`mb_pic1` AS `t0_c8`, `t`.`mb_pic2` AS `t0_c9`, `t`.`mb_pic3` AS `t0_c10`, `t`.`mb_pic4` AS `t0_c11`, `t`.`mb_zszy` AS `t0_c12`, `t`.`mb_lxwm` AS `t0_c13`, `t`.`mb_zxns` AS `t0_c14`, `t`.`mb_kfzx` AS `t0_c15`, `t`.`mb_mzsm` AS `t0_c16`, `t`.`mb_ggfw` AS `t0_c17`, `t`.`mb_bj` AS `t0_c18`, `t`.`mb_order` AS `t0_c19`, `schoolinfo`.`s_id` AS `t1_c0`, `schoolinfo`.`s_name` AS `t1_c1`, `schoolinfo`.`s_banner` AS `t1_c2`, `schoolinfo`.`s_logo` AS `t1_c3`, `schoolinfo`.`s_bxys` AS `t1_c4`, `schoolinfo`.`s_xyjs` AS `t1_c5`, `schoolinfo`.`s_zsdx` AS `t1_c6`, `schoolinfo`.`s_xxhj` AS `t1_c7`, `schoolinfo`.`s_kkxx` AS `t1_c8`, `schoolinfo`.`s_bmxz` AS `t1_c9`, `schoolinfo`.`s_xlxw` AS `t1_c10`, `schoolinfo`.`s_click` AS `t1_c11`, `schoolinfo`.`s_bj` AS `t1_c12` FROM `mb_step` `t`  LEFT OUTER JOIN `school` `schoolinfo` ON (t.s_name=schoolinfo.s_name)  WHERE (mb_tj!=1) ORDER BY mb_order LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `excal`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `excal`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Excal.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `excal` `t` WHERE ex_kstime >="2012-08-31" LIMIT 20
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `mxtj`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `mxtj`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '一休带你逛') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Mxtj.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `mxtj` `t` WHERE (mx_class = '热门推荐') AND (mx_bool=1) LIMIT 10
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `guanggao`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `guanggao`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Guanggao.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `guanggao` `t` LIMIT 12
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `slide`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `slide`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] WebStep.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT z_pic1,z_link1,z_pic2,z_link2,z_pic3,z_link3,z_pic4,z_link4,z_pic5,z_link5,z_pic6,z_link6 FROM `web_step` `t` WHERE z_id='0' LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcbname`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcbname`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcbname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcbname` `t`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kcsname`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kcsname`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='1'
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='2'
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='3'
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='4'
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='5'
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kcsname.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kcsname` `t` WHERE kcbid='6'
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `ennews`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `ennews`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Ennews.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `ennews` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxsclass`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxsclass`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 6
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_news`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_news`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] YxNews.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_news` `t` WHERE npic !='0' or npic !='' ORDER BY ndate desc LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yx_kaike`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yx_kaike`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] YxKaike.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yx_kaike` `t` ORDER BY yxk_id desc LIMIT 2
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_news`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_news`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] QpNews.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_news` `t` WHERE npic !='0' or npic !='' ORDER BY news_id desc LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `qp_kaike_class`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `qp_kaike_class`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] QpKaikeClass.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `qp_kaike_class` `t` ORDER BY kk_id desc LIMIT 2
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `lxnews`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `lxnews`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Lxnews.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` WHERE lx_npic !='0'  or lx_npic !='' ORDER BY lx_nid desc LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Lxnews.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `lxnews` `t` ORDER BY lx_nid desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `kkinfo`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `kkinfo`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kkinfo.find()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` WHERE k_pic !='0' or k_pic !='' ORDER BY kid desc LIMIT 1
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Kkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `kkinfo` `t` ORDER BY kid desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxsclass.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxsclass` `t` ORDER BY ps_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxkkinfo`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxkkinfo`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='36' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='35' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='34' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='33' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxkkinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxkkinfo` `t` WHERE pxk_cl ='32' ORDER BY pxk_id desc LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `teacher`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `teacher`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Teacher.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `teacher` `t` WHERE t_bool=1 LIMIT 2
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tjbiao`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tjbiao`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Tjbiao.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tjbiao` `t` WHERE tj_bool=1 LIMIT 5
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:32:25 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:32:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:32:25 [trace] [system.CModule] Loading "widgetFactory" application component
+2012/08/31 01:32:26 [trace] [system.CModule] Loading "log" application component
+2012/08/31 01:32:26 [trace] [system.CModule] Loading "request" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "viewRenderer" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "db" application component
+2012/08/31 01:32:27 [trace] [system.db.CDbConnection] Opening DB connection
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "clientScript" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "assetManager" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "urlManager" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "coreMessages" application component
+2012/08/31 01:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_root/upload/1313658478.gif".' in E:\esovl\framework\web\CWebApplication.php:328
+Stack trace:
+#0 E:\esovl\framework\web\CWebApplication.php(121): CWebApplication->runController('admin_root/uplo...')
+#1 E:\esovl\framework\base\CApplication.php(135): CWebApplication->processRequest()
+#2 E:\esovl\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/admin_root/upload/1313658478.gif
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "errorHandler" application component
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `web_step`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `web_step`
+2012/08/31 01:32:27 [trace] [system.db.ar.CActiveRecord] WebStep.findByPk()
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `web_step` `t` WHERE `t`.`z_id`=0 LIMIT 1
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "user" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "session" application component
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `pxbclass`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `pxbclass`
+2012/08/31 01:32:27 [trace] [system.db.ar.CActiveRecord] Pxbclass.findAll()
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `pxbclass` `t`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `hzjg`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hzjg`
+2012/08/31 01:32:27 [trace] [system.db.ar.CActiveRecord] Hzjg.findAll()
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hzjg` `t`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `yqlj`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `yqlj`
+2012/08/31 01:32:27 [trace] [system.db.ar.CActiveRecord] Yqlj.findAll()
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `yqlj` `t`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `cpinfo`
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `cpinfo`
+2012/08/31 01:32:27 [trace] [system.db.ar.CActiveRecord] Cpinfo.findAll()
+2012/08/31 01:32:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `cpinfo` `t` WHERE cp_id<>10
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "messages" application component
+2012/08/31 01:32:27 [trace] [system.CModule] Loading "widgetFactory" application component

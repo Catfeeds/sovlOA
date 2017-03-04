@@ -1,0 +1,20 @@
+.top{ width:960px; height:auto;}
+.top_box01{ width:958px;margin-left:1px;height:32px; line-height:32px; background:#fff;}
+.top_box01 p,.top_box01 ul,.top_box01 ul li{ float:left;}
+.top_box01 p { padding:0 8px;}
+.top_box01 ul { margin-left:22px; display:inline;}
+.top_box01 ul li{ margin-right:15px; display:inline;}
+.top_box01 ul li input,.top_box01 ul li label{ float:left;}
+.top_box01 ul li label { margin-top:1px;}
+.top_box01 ul li input{width:88px;height:16px;line-height:16px;font-family:Arial;border:1px solid #ccc; margin-top:6px;}
+.top_box01 ul li img { margin-top:6px; cursor:pointer;}
+.top_box01 ul li a { color:#f00; text-decoration:underline;}
+.top_box01 .add{margin-right:18px; float:right; display:inline;}
+.top_box01 .add a{ color:#05a;}
+.top_box01 .icon_user{ background:url(../images/icon_user.gif) left 5px no-repeat; padding-left:28px;}
+.top_box01 p strong { color:#0055aa;}
+.logo{ margin-top:1px;}
+.nav{ width:944px; height:40px; background:url(../images/qp_navbg.jpg) no-repeat; margin:7px auto 0 auto;}
+.nav ul li { height:40px; line-height:40px; text-align:center; padding:0 20px; font-size:14px; font-weight:bold; float:left; background:url(../images/qp_nav_line.jpg) right no-repeat;}
+.nav ul li a{ color:#fff;}
+.nav ul li a:hover{ color:#fff;}

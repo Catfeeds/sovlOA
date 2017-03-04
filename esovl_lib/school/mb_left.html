@@ -1,0 +1,56 @@
+<div class="main_xyjs_right">
+    	<div class="main_xyjs_right_box01">
+        	
+            <div class="main_box01_left_r">
+    	<div class="main_box01_left_01_r"><span><a href="mb_n_list.php?class=1">公告栏</a></span></div>
+        <div class="main_box01_left_02_r">
+        	<div class="main_box01_left_02_list01_r">
+	<?php
+						$sql="select * from mbnews where nclass=1 and s_name='".$_SESSION["s_name"]."' order by ndate desc limit 4";
+						$rs=mysql_query($sql);
+						if (mysql_num_rows($rs)>=1){
+							while ($row=mysql_fetch_array($rs,MYSQL_ASSOC)){
+						?>
+         <dl>
+         <dt><img src="images/jd_l_fk.jpg" /></dt>
+         <dd><a href="mb_n_detail.php?id=<?php echo $row["nid"];?>"><?php if (strlen($row["ntitle"])>42){echo msubstr($row["ntitle"],42)."...";}else{echo $row["ntitle"];}?></a></dd>
+         </dl>             
+	<?php
+	}}
+	?>
+            </div>
+            <div class="main_box01_left_02_list02_r">
+            	<div class="main_box01_left_02_list02_tel_r"><img src="images/jd_tel.jpg" style="float:left;"/><span style="display:block;height:40px; font-size:28px;line-height:40px;color:#0099CC;"><strong><?php echo $mb_tel;?></strong></span></div>
+               			  <div class="main_box01_left_02_list02_dz_r">地址：<?php echo $mb_adderss;?></div>
+                <div class="main_box01_left_02_list02_wsbm_r"><a href="mb_wsbm.php"><img src="images/jd_wsbm.jpg"></a></div>
+            </div>
+        </div>
+        <div class="main_box01_left_03_r"><img src="images/jd_title_bottom_right.jpg"></div>
+    </div>
+            
+        </div>
+        <div class="main_xyjs_right_box02">
+        	
+            <div class="main_box01_left_r">
+    	<div class="main_box01_left_01_r"><span><a href="mb_tab_updown.php">表格下载</a></span></div>
+        <div class="main_box01_left_01_list">
+        <?php
+						$sql="select * from mb_download where w_dclass='表格资料下载' and s_name='".$_SESSION["s_name"]."' order by w_id desc limit 5";
+						$rs=mysql_query($sql);
+						if (mysql_num_rows($rs)>=1){
+							while ($row=mysql_fetch_array($rs,MYSQL_ASSOC)){
+					?>
+					
+					<dl>
+            <dt><img src="images/jd_dot_s.jpg" /></dt>
+        	<dd><a href="../admin_root/<?php echo $row["w_con"];?>"><?php if (strlen($row["w_title"])>42){echo msubstr($row["w_title"],42)."...";}else{echo $row["w_title"];}?></a></dd>
+            </dl>
+                  <?php }}?>
+            
+            
+        </div>
+        <div class="main_box01_left_03_r"><img src="images/jd_title_bottom_right.jpg"></div>
+    </div>
+            
+        </div>
+    </div>

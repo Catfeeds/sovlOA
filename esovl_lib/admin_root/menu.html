@@ -1,0 +1,220 @@
+<link href="images/root.css" rel="stylesheet" type="text/css" />
+<SCRIPT language=javascript>
+<!--
+var ss=0;
+function left_menu(meval)
+{
+  var left_n=document.getElementById(meval);
+    if(ss!=0&&ss!=left_n){ ss.style.display='none';}
+  ss=left_n;  
+  
+  if (left_n.style.display=='none')
+  { left_n.style.display='';}
+  else  
+  { left_n.style.display='none';}
+ 
+}
+-->
+</SCRIPT>
+<body style="height:auto; background-image:url(images/mian_left_bg.jpg); background-repeat:repeat-y; overflow-x:hidden; overflow-y:auto;">
+<div class="mian_left">
+           <div class="mian_left_box01">
+            <div class="mian_left_box01_00">
+        	<dl><dt><img src="images/ico01.jpg" /></dt>
+        	<dd><a href="main.php" target="frmright">管理首页</a><span>|</span><a href="out.php">退出</a></dd>
+        	</dl>
+            </div>
+            <div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico02.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list02');">系统设置</a></dd></dl>
+            <div class="box_list" id="box_list02" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="z_webset.php" target="frmright">基本信息</a></td>
+    </tr>
+  <tr>
+    <td><a href="z_cpinfo.php" target="frmright">企业信息列表</a></td>
+    </tr>  
+  <tr>
+    <td><a href="GuangGaoList.php" target="frmright">广告设置</a></td>
+  </tr>
+  <tr>
+    <td><a href="z_config1.php" target="frmright">首页图片轮播</a></td>
+  </tr>
+</table>
+            </div>
+            </div>
+            
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico03.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list03');">文章管理</a></dd></dl>
+            <div class="box_list" id="box_list03" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="z_nclass.php" target="frmright">总站新闻分类</a></td>
+    </tr>
+  <tr>
+    <td><a href="z_nlist.php" target="frmright">新闻信息列表</a></td>
+    </tr>  
+  <tr>
+    <td><a href="z_nadd.php" target="frmright">新闻信息添加</a></td>
+  </tr>
+
+</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico04.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list04');">课程分类</a></dd></dl>
+            <div class="box_list" id="box_list04" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="kc_bname.php" target="frmright">课程大类管理</a></td>
+    </tr>
+  <tr>
+    <td><a href="kc_sname.php" target="frmright">课程小类管理</a></td>
+    </tr>   
+</table>
+            </div>
+            </div>			
+
+<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico05.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list14');">名师风采</a></dd></dl>
+            <div class="box_list" id="box_list14" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="z_teacher.php" target="frmright">名师列表</a></td>
+    </tr>
+	<tr>
+    <td><a href="z_tadd.php" target="frmright">添加教师信息</a></td>
+    </tr>  
+</table>
+            </div>
+            </div>
+
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico06.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list05');">课程推荐管理</a></dd></dl>
+            <div class="box_list" id="box_list05" style="display:none;">
+<table width="137" border="0">
+<tr>
+    <td><a href="tj_list.php" target="frmright">课程推荐管理</a></td>
+</tr>
+<tr>
+    <td><a href="xx_list.php" target="frmright">学校推荐管理</a></td>
+</tr>
+</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico07.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list06');">考试日历</a></dd></dl>
+            <div class="box_list" id="box_list06" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="exlist.php" target="frmright">考试日历管理</a></td>
+    </tr>
+  <tr>
+    <td><a href="exadd.php" target="frmright">添加考试日历</a></td>
+    </tr> 
+</table>  </div>
+            </div>
+			
+		 <div class="mian_left_box01_00">
+         <dl><dt><img src="images/ico13.jpg" width="30" height="30" /></dt>
+         <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list07');">首页推荐链接</a></dd></dl>
+         <div class="box_list" id="box_list07" style="display:none;">
+		<table width="137" border="0">
+		<tr>
+		<td><a href="mxtj_list.php" target="frmright">管理</a></td>
+		</tr>
+		</table>
+            </div>
+            </div>			
+			
+			<!--<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico01.jpg" /></dt><dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list08');">热门推荐</a></dd></dl>
+            <div class="box_list" id="box_list08" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="z_webset.php" target="frmright">ddd</a></td>
+    </tr>
+  <tr>
+    <td><a href="z_cpinfo.php" target="frmright">ddd</a></td>
+    </tr>  
+  <tr>
+    <td><a href="GuangGaoList.php" target="frmright">ddd</a></td>
+  </tr>
+  <tr>
+    <td><a href="z_config1.php" target="frmright">ddd</a></td>
+  </tr>
+</table>
+            </div>
+            </div>-->
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico08.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list09');">合作机构</a></dd></dl>
+            <div class="box_list" id="box_list09" style="display:none;">
+			<table width="137" border="0">
+			  <tr>
+				<td><a href="hzjg.php" target="frmright">合作机构管理</a></td>
+				</tr>
+			</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico09.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list10');">友情链接</a></dd></dl>
+            <div class="box_list" id="box_list10" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="yqlist.php" target="frmright">链接列表</a></td>
+    </tr>
+</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico10.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list11');">会员管理</a></dd></dl>
+            <div class="box_list" id="box_list11" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="vip_list.php" target="frmright">会员列表</a></td>
+    </tr>
+</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico11.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list12');">数据备分</a></dd></dl>
+            <div class="box_list" id="box_list12" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="sj_webset.php" target="frmright">整理中</a></td>
+    </tr>
+</table>
+            </div>
+            </div>
+			
+			<div class="mian_left_box01_00">
+            <dl><dt><img src="images/ico12.jpg" width="30" height="30" /></dt>
+            <dd><a href="javascript:void(null)" onClick="javascript:left_menu('box_list13');">管理权限</a></dd></dl>
+            <div class="box_list" id="box_list13" style="display:none;">
+<table width="137" border="0">
+  <tr>
+    <td><a href="alist.php" target="frmright">管理员密码</a></td>
+    </tr>
+  <tr>
+</table>
+            </div>
+            </div>
+			</div> 
+</div>
+</body>

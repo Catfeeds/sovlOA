@@ -1,0 +1,57 @@
+ul.yixiuPage
+{
+	font-size:11px;
+	border:0;
+	padding-top: 5px;
+        padding-bottom: 5px;
+	line-height:100%;
+	display:inline;
+}
+
+ul.yixiuPage li
+{
+	display:inline;
+}
+
+ul.yixiuPage a:link,
+ul.yixiuPage a:visited
+{
+	/*border:solid 1px #9aafe5;*/
+	/*font-weight:bold;*/
+	color:#0e509e;
+	text-decoration:none;
+}
+
+ul.yixiuPage .page a
+{
+	font-weight:normal;
+        
+}
+
+
+
+ul.yixiuPage .selected a
+{
+	background:#FFFFFF;
+	color:#000000;
+}
+
+ul.yixiuPage .hidden a
+{
+	/*border:solid 1px #DEDEDE;*/
+	color:#888888;
+}
+ul.yixiuPage .next a,
+ul.yixiuPage .previous a
+{
+	padding:1px;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yixiuPage .first,
+ul.yixiuPage .last
+{
+	display:none;
+}

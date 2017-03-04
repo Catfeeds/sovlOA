@@ -1,0 +1,9 @@
+@charset "utf-8";
+.top { width:950px; height:auto;}
+.top_logo { width:950px; height:auto;}
+.top_nav { width:950px; height:54px; background-image:url(../images/jd_nav_bg.jpg); background-repeat:no-repeat;}
+.top_nav dl { height:54px; line-height:65px; font-size:14px; font-weight:bold; overflow:hidden; text-align:center;}
+.top_nav dl dt { width:102px; float:left; overflow:hidden;}
+.top_nav dl dd { width:93px; float:left; overflow:hidden;}
+.top_nav dl a { color:#333;}
+.top_nav dl a:hover { color:#2068ff; text-decoration:none;}

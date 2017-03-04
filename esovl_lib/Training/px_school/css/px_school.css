@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* 全局 */
+*{margin:0px;padding:0px;}
+body{font-size:12px; color:#333; line-height:22px; background:#fff;}
+div{overflow:hidden;}
+
+a{text-decoration:none; color:#333;}
+a:hover{text-decoration:underline; color:#fe5614;}
+.ba{text-decoration:none; color:#fff;}
+.ba:hover{text-decoration:underline; color:#fe5614;}
+img{border:none;}
+from{display:inline;}
+dl,ul{ list-style-type:none;}
+h1,h2{ font-size:12px;}
+table { font-size:12px;}
+.wrapper{width:950px; height:auto; background:#fff; margin:0 auto; /*position:absolute; top:0px; right:50%; margin-right:-475px;*/}
+
+
+/************ top ***************/
+.logo{width:193px; height:90px; float:left;}
+.time{width:289px; height:90px; margin-left:18px; display:inline; float:left;}
+.time_dd{width:215px; float:left; margin-right:5px;display:inline;}
+.time1{width:215px; margin-top:18px; height:18px; line-height:18px;}
+.time_tianqi{width:65px; height:83px; margin-top:8px; float:left;}
+.tiem_zhandian{width:215px;margin-top:10px;}
+.tiem_zhandian span{font-size:18px; font-weight:bold; float:left; margin-right:10px; display:inline;}
+.time_right{width:445px; float:left;}
+.school_nov{width:435px; float:right; text-align:right; margin:18px 13px 0 0; display:inline;}
+.school_nov a{margin-left:8px; margin-right:8px; display:inline;}
+.school_denglu{width:300px; float:right; text-align:right; margin:10px 21px 0 0; display:inline;}
+.school_denglu a{color:#f00;}
+.school_denglu a:hover{color:#f00;}
+.school_banner{width:950px; height:100px; float:left;}
+.school_nov_2{width:950px; float:left; margin-top:12px;}
+.school_nov_left{width:2px; height:40px; float:left;}
+.school_nov_center{width:946px; float:left; background:url(../images/school_11.jpg); height:40px;}
+.school_nov_right{width:2px; height:40px; float:left;}
+.school_nov_xuexiao{ height:30px; float:left; text-align:center; font-size:16px; font-weight:bold; color:#1a50b8; margin-left:5px; display:inline; padding-top:5px;}
+.school_nov_3{width:710px; float:left; margin-left:44px; display:inline; margin-top:5px;}
+.school_nov_3 dd{width:60px; float:left; font-size:14px; font-weight:bold; color:#fff; line-height:30px;}
+.school_nov_3 dt{width:2px; float:left; margin:0 15px 0 15px; display:inline;}
+.school_nov_3 dd a{color:#fff; text-decoration:none;}
+.school_nov_3 dd a:hover{color:#000; text-decoration:none;}
+.school_lujing{width:900px; float:left; margin:8px 0 0 4px; display:inline; background:url(../images/school_23.jpg) 0 7px no-repeat; padding-left:20px; color:#1a50b8;}
+.school_lujing span{ font-weight:bold;}
+.school_nov_xuexiao_left{float:left;}
+.school_nov_xuexiao_content{float:left; text-align:center; height:30px; background:url(../images/px_shcool_kuang_16.jpg); line-height:30px;}
+
+/************** mian ***************/
+.school_mian_left{width:265px; float:left; margin-top:8px;}
+.school_mian_about{width:265px; float:left;}
+.school_about_top{width:265px; height:35px; float:left; background:url(../images/school_26.jpg) no-repeat;}
+.school_about_center{width:265px; height:164px; float:left; background:url(../images/school_28.jpg);}
+.school_about_bottom{width:265px; float:left;}
+.school_about_biaoti{width:250px; float:left; margin-left:13px; display:inline; line-height:35px;}
+.school_about_biaoti span{width:97px; float:left; text-align:center; font-weight:bold; color:#2562ff; font-size:14px; margin-right:100px; display:inline;}
+.school_about_neirong{width:235px; float:left; margin-left:16px; margin-top:4px; display:inline; text-indent:2em;} 
+.school_dongtai_liebiao{width:233px; float:left; margin:2px 0 0 15px; display:inline;}
+.school_dongtai_liebiao li{width:233px; float:left; border-bottom:1px dotted #a2a2a2; line-height:35px; background:url(../images/school_33.jpg) 0 12px no-repeat; padding-left:10px; display:inline;}
+.school_dongtai_liebiao span{width:160px; float:left;}
+.school_baoming_1{width:86px; float:left; margin:4px 0 0 25px; display:inline;}
+.school_baoming_jiantou{width:20px; float:left; margin:9px 0 0 10px; display:inline;}
+.school_baoming_2{width:14px; float:left; margin:5px 0 0 193px; display:inline;}
+.school_lianxi_dh{width:68px; float:left; font-weight:bold; color:#1a50b8; margin-left:19px; line-height:24px; display:inline;}
+.school_lianxi_dh2{width:165px; float:left; line-height:24px;}
+.school_lianxi_xuxian{width:235px; height:1px; border-bottom:1px dotted #a2a2a2; float:left; margin:4px 0 0 15px; display:inline;}
+.school_lianxi_qq{width:23px; float:left; margin:12px 0 0 30px; display:inline;}
+.school_lianxi_laoshi{width:50px; float:left; margin-top:12px; margin-left:10px; display:inline;}
+.school_mian_right{width:674px; float:left; margin:8px 0 0 11px; display:inline;}
+.school_mian_banner{width:674px; float:left;}
+.school_mian_kecheng{width:674px; float:left;}
+.school_mian_kc2{width:324px; height:25px; float:left;}
+.school_mian_kc2 li {width:124px; height:25px; float:left; text-align:center; line-height:25px; margin-right:16px; display:inline;}
+.school_mian_kc2 li a{background:url(../images/school2_36.jpg) no-repeat;width:124px; height:26px; float:left; font-weight:bold; color:#1a50b8; font-size:14px; text-decoration:none;}
+.school_mian_kc2 li a:hover{background:url(../images/school2_36.jpg) no-repeat;width:124px; height:26px; float:left; font-weight:bold; color:#1a50b8; font-size:14px; text-decoration:none;}
+.school_mian_xian{width:674px; height:2px; background:#75c9f3; float:left;}
+#tabfirst li {float: left; background-color: #868686; color: white;}
+div.contentfirst {clear: left; color: #f00; display: none;}
+div.contentin { display: block;}
+.school_mian_liebiao{width:674px; height:390px; float:left;}
+.school_mian_liebiao ul{background:#f1f5f6; width:674px; height:28px;}
+.school_mian_liebiao li{ float:left; line-height:28px; font-weight:bold; color:#000; text-align:center; margin:0 10px 0 10px; display:inline;}
+.school_mian_liebiao dd{width:240px; float:left; margin:0 10px 0 10px; display:inline; color:#1a50b8; line-height:41px; text-align:center;}
+.school_mian_liebiao dt{ float:left; margin:0 10px 0 10px; display:inline; line-height:41px; text-align:center;}
+.school_mian_liebiao dt img{margin-top:6px; float:left;}
+.school_mian_liebiao span{width:674px; float:left; height:1px; line-height:1px; border-bottom:1px dotted #afafaf; overflow:hidden; display:block;}
+.school_mian_liebiao2{width:674px; float:left;}
+.school_mian_liebiao2 ul{background:#f1f5f6; width:674px; height:28px;}
+.school_mian_liebiao2 li{ float:left; line-height:28px; font-weight:bold; color:#000; text-align:center; margin:0 10px 0 10px; display:inline;}
+.school_mian_liebiao2 dd{width:240px; float:left; margin:0 10px 0 10px; display:inline; color:#1a50b8; line-height:41px; text-align:center;}
+.school_mian_liebiao2 dt{ float:left; margin:0 10px 0 10px; display:inline; line-height:41px; text-align:center;}
+.school_mian_liebiao2 dt img{margin-top:6px; float:left;}
+.school_mian_liebiao2 span{width:674px; float:left; height:1px; line-height:1px; border-bottom:1px dotted #afafaf; overflow:hidden; display:block;}
+.school_mian_sousuo{width:674px; float:left; margin-top:12px;}
+.scholl_mian_ss_left{width:40px; float:left;}
+.school_mian_ss_center{width:625px; height:43px; float:left; background:url(../images/school3_38.jpg);}
+.school_mian_ss_right{width:9px; float:left;}
+.school_mian_ss_wz{width:75px; font-size:16px; font-weight:bold; float:left; line-height:45px; color:#1b55c4;}
+.school_mian_ss_jt{width:10px; float:left; margin:20px 0 0 16px; display:inline;}
+.school_mian_ss_fl{width:211px; float:left; margin:15px 0 0 10px; display:inline; line-height:20px;}
+.school_mian_ss_fl input{ width:149px; height:18px; border:1px solid #1a50b8; line-height:20px;}
+.school_mian_ss_dj{width:50px; float:left; margin-top:15px !important; margin-top:16px;}
+.school_mian_px{width:672px; height:104px; float:left; border:1px solid #d9e6ee; margin-top:9px;}
+.school_mian_px_bj{width:672px; height:26px; float:left; background:url(../images/school3_52.jpg);}
+.school_mian_px_kc{width:122px; height:20px; background:url(../images/school3_61.jpg) no-repeat; margin:5px 0 0 14px; display:inline; float:left; font-weight:bold; color:#1fabd3; padding-left:25px;}
+.school_mian_more{width:60px; float:right; line-height:26px;}
+.school_mian_px_lb{width:630px; float:left; margin-left:35px; display:inline;}
+.school_mian_px_lb li{width:85px; height:23px; float:left; background:url(../images/school3_75.jpg) no-repeat; margin-top:10px; margin-right:19px; display:inline; text-align:center;}
+.school_mian_xx_tu{width:660px; float:left;}
+.school_mian_xx_tu li{width:194px; float:left; text-align:center; margin:24px 0 0 23px; display:inline;}
+
+/********* school_nr ***********/
+.achool_jianjie_nr{width:674px; float:left;}
+.school_jianjie_bt{width:92px; 30px; float:left; margin-left:18px; display:inline; background:url(../images/jianjie_03.jpg) no-repeat; text-align:center; color:#1a50b8; font-size:14px; font-weight:bold; line-height:30px;}
+.school_jianjie_kuang{width:672px; float:left; border:1px solid #d9e6ee; min-height:411px; height:auto !important; height:411px; overflow:visible;}
+.school_jianjie_js{width:632px; float:left; margin:18px 0 0 18px; display:inline; line-height:24px; border-bottom:1px dotted #929292;} 
+.school_jianjie_js span{font-weight:bold; color:#1a50b8;}
+.school_jianjie_js img{border:1px solid #b2b2b2; padding:2px; display:inline; margin-left:10px; margin-bottom:10px;}
+.school_lianxi_dh3{width:535px; float:left; line-height:24px;}
+.school_dongtai_nr{width:642px; float:left; margin:18px 0 0 18px; display:inline; line-height:24px;}
+.school_dongtai_nr span{font-weight:bold; font-size:14px; color:#1a50b8;}
+.school_dongtai_nr img{border:1px solid #b2b2b2; padding:2px; display:inline; margin-right:10px;}
+.school_dongtai_lb{width:640px; height:120px; float:left; margin:10px 0 0 18px; display:inline; line-height:30px; clear:both;}
+
+.school_dongtai_lb span { line-height:22px; height:66px; overflow:hidden; color:#666; margin-top:6px;}
+.school_dongtai_lb span a { color:#f00;}
+.school_dongtai_lb dl { height:30px; border-bottom:1px dashed #aaa;}
+.school_dongtai_lb dd{width:450px; float:left; font-size:12px; font-weight:bold;}
+.school_dongtai_lb dd a { color:#36f;}
+.school_dongtai_lb dt{width:80px; float:right; color:#999;}
+.school_fenxiao_tu{width:650px; float:left;}
+.school_fenxiao_tu li{width:122px; height:121px; float:left; margin:24px 0 0 28px; display:inline; border:1px solid #bfbfbf; padding:2px;}
+.school_kaiban_bj{width:650px; float:left; margin-left:15px; margin-top:6px; display:inline;}
+.school_kaiban_bj li{float:left; text-align:center; font-weight:bold; color:#1a50b8; line-height:30px; width:54px; margin-right:10px; display:inline;}
+.school_kaiban_bj dt{width:54px; text-align:center; float:left; line-height:30px; margin-right:10px; display:inline;}
+.school_kaiban_bj dd{width:54px; text-align:center; float:left; font-weight:bold; color:#f00; line-height:30px;}
+.scholl_kecheng_fl{width:650px; float:left; margin-top:15px;}
+.scholl_kecheng_fl li{width:101px; height:28px; float:left; text-align:center; line-height:28px; margin-left:20px; display:inline;}
+.scholl_kecheng_fl li a{width:101px; height:28px; float:left; color:#000; text-decoration:none; background:url(../images/kecheng_05.jpg);}
+.scholl_kecheng_fl li a:hover{width:101px; height:28px; float:left; color:#1a50b8; font-weight:bold; text-decoration:none; background:url(../images/kecheng_03.jpg);}
+.school_kecheng_jn{width:630px; height:31px; float:left; background:url(../images/kecheng_09.jpg); margin-left:20px; margin-top:15px; display:inline;}
+.school_kecheng_zyjn{width:200px; float:left; line-height:31px; font-weight:bold; color:#1a50b8; background:url(../images/kecheng_12.jpg) 0 11px no-repeat; padding-left:15px; display:inline; margin-left:20px;}
+.cshool_shizi_dk{width:635px; float:left; margin:10px 0 0 20px; display:inline; border-bottom:1px dotted #828282;}
+.school_shizi_tu{width:137px; float:left; border:1px solid #bababa; padding:2px; margin-top:10px;}
+.school_shizi_js{width:475px; float:left; margin-left:12px; display:inline; margin-top:10px; line-height:24px;}
+.school_shizi_js span{color:#1a50b8; font-weight:bold;}
+.school_liuyan_fl{width:615px; float:left; margin:10px 0 0 53px; display:inline;}
+.school_liuyan_fl textarea{width:350px; height:110px;}
+.school_liuyan_fl span{width:70px; float:left; text-align:right; font-weight:bold; color:#1a50b8;}
+.school_liuyan_anniu{width:505px; float:left; margin:10px 0 0 53px; display:inline; text-align:center;}
+
+.fy { width:640px; margin-left:15px; height:35px; line-height:35px; text-align:right; border-top:1px solid #D9E6EE; margin-top:10px; float:left;}
+.text h1{ text-align:center; font-size:14px; height:30px; line-height:30px; color:#30F;}
+.text h2{ text-align:center; color:#999; border-top:1px dashed #bbb; font-weight:normal; margin-bottom:6px;}
+.fhlb { height:30px; line-height:30px; margin-top:10px; border-top:1px dashed #bbb; text-align:right; font-size:14px;}
+.fhlb a {color:#1a50b8;}
+/******* bottom *******/
+.bottom{float:left;}
+.bottom_box01 { margin-top:11px;}
+.main_box06_cen_box01 { height:70px; border-bottom:1px dotted #b1b1b1;}
+.main_box06_cen_box01_left { width:70px; height:20px; color:#fff; background-image:url(../images/bg_4.jpg); background-repeat:no-repeat; margin:20px 10px 0px 11px; text-indent:8px; float:left; display:inline;}
+.main_box06_top { width:950px; height:9px;}
+.main_box06_cen { width:950px; height:auto; background-image:url(../images/bg00.jpg); background-repeat:repeat-y;}
+.main_box06_cen_box01_right { width:840px; height:67px; float:left;}
+.main_box06_cen_box01_right ul li { float:left; width:102px; height:67px; margin-right:3px; display:inline;}
+.main_box06_cen_box02_left { width:70px; height:20px; color:#fff; background-image:url(../images/bg_4.jpg); background-repeat:no-repeat; margin:10px 10px 0px 11px; text-indent:8px; float:left; display:inline;}
+.main_box06_cen_box02_right ul { margin-top:10px;}
+.main_box06_cen_box02_right ul li { float:left; margin-right:8px;}
+.bottom_box02 { height:110px; width:948px; border:1px #9CF solid; float:left; margin-top:12px;}
+.bottom_box02_01 { float:left; width:400px;}
+.bottom_box02_01 ul { float:right; margin-top:15px;}
+.bottom_box02_01 ul li { float:left;}
+.bottom_box02_02 { float:left; width:480px;}
+.bottom_box02_02_nav { margin-top:20px;}
+.bottom_box02_02_nav span { margin:0 6px;}
+.bottom_box02_02_dz { line-height:18px; margin-top:4px;}
+.bottom_box02_02_dz span { font-family:Arial;}
+#demo {background: #FFF; overflow:hidden; width: 900px;}
+#indemo {float: left; width: 800%; height:110px;}
+#demo1 {float: left; height:110px;}
+#demo2 {float: left;}
+.ww{height:110px; float:left; text-align:center;}
+.school_jianjie_tu{width:240px; height:260px; float:left; margin:20px 0 0 20px; display:inline;}
+.school_jianjie_xingm{width:380px; float:left; margin:15px 0 0 15px; display:inline;}

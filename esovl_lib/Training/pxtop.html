@@ -1,0 +1,88 @@
+<div class="top">
+	<div class="pxtop01">
+<div class="pxtop01_left">欢迎您
+<?php if(!isset($_COOKIE["vipname"])){?><a href="../vip_login.php">[请登录]</a>，新用户？<a href="../vip_zc.php">[免费注册]</a><?php } else{echo "<span>".$_COOKIE["vipname"]."</span> 光临".$z_name."!";}?></div>
+        <div class="pxtop01_right">
+   	  <ul>
+          <li><a href="../vip_center.php">我的一休</a><span>|</span></li>
+          <li><a href="../about.php?cid=10">帮助中心</a><span>|</span></li>
+          <li><a href="#">网站导航</a><span>|</span></li>
+          <li><a href="#"><strong>上海站-选择城市</strong></a></li>
+</ul>
+        </div>
+    </div>
+    <div class="pxtop02">
+    	<div class="pxtop02_logo"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>"><img src="../admin_root/<?=$web['z_logo']?>" width="165" height="100" /></a></div>
+        <div class="pxtop02_nav">
+        	<div class="top_nav">
+	<div class="top_nav_box01">
+    	<div class="top_nav_box01_list00"><a href="javascript:void(null);">首页</a></div>
+        <div class="top_nav_box01_list01" id="nav_tb_">
+        	<ul>
+            	<li id="nav_tb_1" class="nav_normaltab" onmouseover="navHoverLi(1);" onmouseout="navnoHoverLi();"><h1><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education">学历</a></h1></li>
+                <li id="nav_tb_2" class="nav_hovertab" onmouseover="navHoverLi(2);" onmouseout="navnoHoverLi();"><h1><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Training">培训</a></h1></li>
+                <li id="nav_tb_3" class="nav_normaltab" onmouseover="navHoverLi(3);" onmouseout="navnoHoverLi();"><h1><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research">研修</a></h1></li>
+                <li class="nav_normaltab"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Abroad">留学</a></li>
+                <li class="nav_normaltab"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Enterprise" >企培</a></li>
+                <li class="nav_normaltab"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/news.php">资讯</a></li>
+                <li class="nav_normaltab"><a href="javascript:void(null);">社区</a></li>
+                <!---->
+            </ul>
+        </div>
+    </div>
+    <div class="top_nav_box02">
+    	<div class="top_nav_box02_box01"><img src="images/nav_line01.jpg"></div>
+        <div class="top_nav_box02_box02">
+        	<div class="nav_undis" id="nav_tbc_01">
+            	<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/">学历教育</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/zxks/">自学考试</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/wlys/">网络院校</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/crgk/">成人高考</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/gjbx/">国际办学</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/xl_gxjz.php">高校简章</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/xl_pro_search.php">简章搜索</a> 
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/gfb/">高复班</a> 
+            </div>
+            <div class="nav_dis" id="nav_tbc_02">
+      <?php
+	  	 $res = $dblink->findAll('pxbclass');
+		 $i=0;
+		     foreach($res as $rowp){
+			 $i=$i+1;
+             if ($rowp["pb_pindao"]=="外语频道"){
+             echo"<a href='px_pd01.php'>".$rowp["pb_title"]."</a>";
+             }
+              if ($rowp["pb_pindao"]=="高考频道"){
+             echo"<a href='px_pd02.php'>".$rowp["pb_title"]."</a>";
+             }
+             if ($rowp["pb_pindao"]=="中学生辅导"){
+             echo"<a href='px_pd03.php'>".$rowp["pb_title"]."</a>";
+             }  
+             if ($rowp["pb_pindao"]=="职业频道"){
+             echo"<a href='px_pd05.php'>".$rowp["pb_title"]."</a>";
+             }
+             if ($rowp["pb_pindao"]=="早教频道"){
+             echo"<a href='px_pd04.php'>".$rowp["pb_title"]."</a>";
+             }
+             if ($rowp["pb_pindao"]=="艺术体育"){
+             echo"<a href='px_pd06.php'>".$rowp["pb_title"]."</a>";
+             }
+             if ($rowp["pb_pindao"]=="少儿频道"){
+             echo"<a href='px_pd07.php'>".$rowp["pb_title"]."</a>";
+             }
+             }?> 
+            <a href="px_shcool.php">培训学校</a><a href="px_shop.php">培训超市</a></div>
+            <div class="nav_undis" id="nav_tbc_03">
+            	<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/MBA">MBA/EMBA</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/master">工程硕士</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/graduate">在职研究生</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/president">总裁总监研修</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/yx_daquan.php">简章大全</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Research/yx_seach.php">简章搜索</a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>

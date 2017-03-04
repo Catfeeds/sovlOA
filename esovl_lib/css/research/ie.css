@@ -1,0 +1,45 @@
+HTML BODY {
+	BACKGROUND-ATTACHMENT: fixed
+}
+#topnav LI A {
+	DISPLAY: block; FILTER: shadow(color=#ffffff,direction:135,strength:1); WIDTH: 85px; TEXT-ALIGN: center
+}
+#topnav LI A:link {
+	DISPLAY: block; FILTER: shadow(color=#ffffff,direction:135,strength:1); WIDTH: 85px; TEXT-ALIGN: center
+}
+#topnav .current-menu-item A {
+	DISPLAY: block; FILTER: shadow(color=#000000,direction:135,strength:1); WIDTH: 85px; TEXT-ALIGN: center
+}
+#topnav .current_page_item A {
+	DISPLAY: block; FILTER: shadow(color=#000000,direction:135,strength:1); WIDTH: 85px; TEXT-ALIGN: center
+}
+#topnav {
+	FONT: 13px 'ËÎÌו','Arial','Lucida Grande','Tahoma',Verdana,sans-serif
+}
+#topnav LI A {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#topnav LI A:link {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#topnav LI A:visited {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#topnav LI A:hover {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#topnav LI A:active {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#topnav LI UL LI A {
+	BACKGROUND: #4b4b4b; FILTER: alpha(opacity=80)! important; WIDTH: 120px! important; HEIGHT: 30px! important
+}
+#topnav LI UL UL {
+	_margin: -31px 0 0 140px
+}
+#topnav LI UL UL {
+	MARGIN: -31px 0px 0px 140px
+}
+#topnav LI UL {
+	WIDTH: 140px
+}

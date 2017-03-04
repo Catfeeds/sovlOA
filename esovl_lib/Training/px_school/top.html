@@ -1,0 +1,87 @@
+<div class="top">
+    <div class="logo"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/"><img src="images/school_02.jpg" width="193" height="90" /></a></div>
+    <div class="time">
+    	<div class="time_dd">
+      <div class="time1">当前时间: <span id="spnTime"></span>
+<script language="javascript">
+var http;
+function createXMLHttp(){
+    if(window.ActiveXObject){
+        http = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    else if(window.XMLHttpRequest){
+		http = new XMLHttpRequest();
+    }
+}
+createXMLHttp();
+http.open("HEAD",".",false);
+http.send(null);
+var curDate = new Date;
+var offsetTime = curDate - Date.parse(http.getResponseHeader("Date"));
+setInterval(function()
+{
+    curDate.setTime(new Date - offsetTime);
+    document.getElementById("spnTime").innerHTML = curDate.toLocaleString();
+}, 1000);
+</script></div>
+<div class="tiem_zhandian"><span>上海站</span>其他城市切换</div>
+</div>
+
+<div class="time_tianqi"> 
+<?php 
+function Weather(){
+	$jason = file_get_contents('http://www.weather.com.cn/data/cityinfo/101020100.html');
+	$jason = json_decode($jason,true);
+	//var_dump($jason);
+	$imgsrc = (date('H')>5&&date('H')<18)?$jason['weatherinfo']['img1']:$jason['weatherinfo']['img2'];
+	echo "<img src = \"images/icon/$imgsrc\"/><br/>";
+	echo "{$jason['weatherinfo']['weather']}<br/>";
+	echo "{$jason['weatherinfo']['temp2']}~{$jason['weatherinfo']['temp1']}";
+}
+Weather();
+?>
+</div>
+      
+    </div>
+    <div class="time_right">
+      <div class="school_nov"><a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/">首页</a>|<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Education/">学历</a>|<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/Training/">培训</a>|<a href="#">研修</a>|<a href="#">留学</a>|<a href="#">资讯</a>|<a href="#">社区</a>|<a href="#">企培</a>|<a href="#">人才</a></div>
+      <div class="school_denglu">
+      <?php
+      if (isset($_COOKIE["vipname"])){?>
+      您好，<font color="red"><?php echo @$_COOKIE["vipname"];?></font> 欢迎来访！
+      <?php }else{ ?>
+       欢迎您，<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/vip_login.php">[请登录]</a>，新用户？<a href="http://<?php echo $_SERVER['SERVER_NAME'];?>/vip_zc.php">[免费注册]</a>
+      <?php } ?>
+      </div>
+    </div>
+    <div class="school_banner"><img src="../../admin_root/<?=$pxmb_banner?>" width="950" height="100" /></div>
+    <div class="school_nov_2">
+      <div class="school_nov_left"><img src="images/school_10.jpg" width="2" height="40" /></div>
+      <div class="school_nov_center">
+        <div class="school_nov_xuexiao">
+			<div class="school_nov_xuexiao_left"><img src="images/px_shcool_kuang_15.jpg" width="4" height="30" /></div>
+			<div class="school_nov_xuexiao_content"><?=$pxs_name?></div>
+			<div class="school_nov_xuexiao_left"><img src="images/px_shcool_kuang_18.jpg" width="3" height="30" /></div>
+		</div>
+        <div class="school_nov_3">
+          <dl>
+            <dd><a href="index.php">机构首页</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="jianjie.php">机构简介</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="kaiban.php">开班信息</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="dongtai.php">机构动态</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="shizi.php?t=shizi">师资介绍</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="fenxiao.php">机构分校</a></dd>
+            <dt><img src="images/school_17.jpg" width="2" height="31" /></dt>
+            <dd><a href="baoming.php">网上报名</a></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="school_nov_right"><img src="images/school_13.jpg" width="2" height="40" /></div>
+    </div>
+   
+  </div>

@@ -1,0 +1,108 @@
+.school_logo { margin-top:12px;}
+.school_weizhi { height:32px; line-height:32px; border-bottom:2px solid #2562ff;}
+.school_box { margin-top:12px;}
+.school_box_left { width:200px; height:auto; float:left;}
+.school_box_left_nav { width:200px; height:238px; background:url(/images/lx_xx_navbg.jpg) left no-repeat; margin-bottom:12px;}
+.school_box_left_nav dl dt { font-size:22px; font-weight:bold; text-indent:50px; height:46px; line-height:46px; background:url(/images/lx_xx_navdtbg.jpg) left no-repeat; margin-top:1px;}
+.school_box_left_nav dl dt a,.school_box_left_nav dl dt a:hover{ color:#fff; text-decoration:none;}
+.school_box_left_nav dl dd { font-size:20px; font-weight:bold; text-indent:50px;  height:46px; line-height:46px; margin-top:1px;}
+.school_box_left_nav dl dd a{ color:#333;}
+.school_box_left_nav dl dd a:hover { color:#2562ff; text-decoration:none;}
+#lx_icon01 { width:180px; display:block; height:46px; background:url(/images/lx_xx_icon.gif) 4px -6px no-repeat;}
+#lx_icon02 { width:180px; display:block; height:46px; background:url(/images/lx_xx_icon.gif) 4px -55px no-repeat;}
+#lx_icon03 { width:180px; display:block; height:46px; background:url(/images/lx_xx_icon.gif) 4px -100px no-repeat;}
+#lx_icon04 { width:180px; display:block; height:46px; background:url(/images/lx_xx_icon.gif) 4px -148px no-repeat;}
+#lx_icon05 { width:180px; display:block; height:46px; background:url(/images/lx_xx_icon.gif) 4px -195px no-repeat;}
+.school_box_left_tool { width:177px; border:1px solid #d9d9d9; margin-bottom:12px;}
+.school_box_left_tool_title { width:100%; height:28px; background:url(/images/lx_xx_tbg.jpg) repeat-x; border-bottom:1px solid #d9d9d9;}
+.school_box_left_tool_title span { display:block; height:28px; line-height:28px; margin-left:6px; padding-left:32px; background:url(/images/dot_ico.jpg) 4px 2px no-repeat; color:#2562ff; font-weight:bold;}
+.school_box_cen { width:552px; float:left;}
+.school_box_cen_list { width:530px; margin-left:12px;}
+.school_box_cen_list_title { height:45px; line-height:45px; border-bottom:1px solid #eee;}
+.school_box_cen_list_title dl dt { float:left; width:400px;}
+.school_box_cen_list_title dl dd { float:right;}
+.school_box_cen_list_title dl dd a { float:left; margin-top:22px; padding-right:8px;}
+.school_box_cen_list_text { padding:10px;}
+.school_box_cen_list_title dl dt img { float:left;}
+.school_box_cen_list_title dl dt a {float:left; margin-top:15px;}
+.school_box_cen_list_text table { line-height:16px;}
+.school_box_cen_list_text table tr td { padding:6px 5px;}
+.school_box_cen_list_text table tr td span { color:#f00;}
+.school_box_right { width:190px; float:left; margin-left:12px; display:inline; margin-bottom:12px;}
+.school_box_right_b01 {border-right:1px solid #dbd9de; width:189px; background:url(/images/xx_rightbg.jpg) repeat-y;}
+ 
+.school_box_right_b01_00 { width:178px;}
+.school_box_right_b01_00_c { width:178px; height:auto; background:url(/images/c00.jpg) repeat-y;}
+.school_box_right_b01_00_c_t h1 { font-size:18px; color:#e1ff60; margin-left:15px; height:28px; line-height:28px; margin-top:6px;}
+.school_box_right_b01_00_c_l ul { height:70px; margin-top:10px;}
+.school_box_right_b01_00_c_l ul li { float:left; margin-left:8px; display:inline; margin-top:6px;}
+.school_box_right_b01_00_c_tle { height:40px; line-height:40px; background:url(/images/tel.jpg) 1px 4px no-repeat; color:#fff; font-family:Arial; font-weight:bold; font-size:14px; padding-left:50px; margin-left:16px;}
+.school_box_right_b01_00_c_wsbm { margin-top:18px; margin-bottom:15px; margin-left:30px;}
+.school_box_right_b01_01 { height:5px; margin:6px 0;}
+.school_box_right_b01_00_c_xxtj{padding:0 20px; color:#FFF;}
+.school_box_right_b01_00_c_xxtj ul { width:120px; margin-left:30px;}
+.school_box_right_b01_00_c_xxtj ul li { width:120px; text-align:center; margin-top:10px;}
+.school_box_right_b01_00_c_xxtj ul li a,.school_box_right_b01_00_c_xxtj ul li a:hover{ color:#fff;}
+
+/**************online***********************/
+.school_box_cen_online_title { height:45px; line-height:45px; font-size:28px; font-weight:800; border-bottom:1px dashed #afafaf;}
+.main_wsbm_box_left_box_list02 { margin-top:10px;}
+.main_wsbm_box_left_box_list02 dl { height:46px; line-height:46px; overflow:hidden;}
+.main_wsbm_box_left_box_list02 dl dt { width:70px; text-align:right; padding-right:8px; float:left;overflow:hidden; font-size:14px;}
+.main_wsbm_box_left_box_list02 dl dd { width:405px; float:left;}
+.main_wsbm_box_left_box_list02 dl dd h2 { width:193px; height:26px; background-image:url(/images/inputbg01.jpg); background-repeat:no-repeat; float:left; line-height:26px; overflow:hidden; margin-top:9px;}
+.main_wsbm_box_left_box_list02 dl dd h2 input { width:180px; height:20px; line-height:20px; font-size:12px; font-family:Arial; margin-left:4px; margin-top:2px; border:none; background:none;}
+.main_wsbm_box_left_box_list02 dl dd select { height:22px; width:193px; line-height:22px; font-size:12px; overflow:hidden; float:left; margin-top:12px;}
+.main_wsbm_box_left_box_list02 dl dd span { color:#666;}
+.main_wsbm_box_left_box_list02 dl dd span strong { color:#f00; margin:0 5px; font-weight:normal;}
+.main_wsbm_box_left_box_list02 dl dd textarea { width:360px; height:80px; float:left; margin-top:10px; font-size:12px; line-height:22px; overflow:hidden;}
+.wsbm_anniu { margin-top:20px; margin-left:107px; margin-bottom:30px;}
+/**************index.zx***********************/
+#main_lyb_list { display:block;}
+.main_lyb_list_left { width:230px; float:left; margin-left:20px; margin-right:12px; display:inline; padding-bottom:10px;}
+.main_lyb_list_left dl { font-size:14px; height:22px; line-height:22px; margin-bottom:12px;}
+.main_lyb_list_left dl dt { width:72px; float:left;}
+.main_lyb_list_left dl dd { width:150px; float:left;}
+.main_lyb_list_left dl dd input { width:150px; height:20px; border:1px solid #cacaca; line-height:20px; font-size:12px;}
+.main_lyb_list_right { width:240px; float:left; padding-bottom:8px;}
+.main_lyb_list_right textarea { width:180px; height:70px; float:left; color:#666;}
+.main_lyb_list_right input { height:22px; line-height:22px; width:45px; text-align:center; margin-top:48px; margin-left:8px;}
+.main_lyb_text { width:100%;}
+.main_lyb_text_list { background-image:url(/images/lyb_linebg.jpg); background-repeat:repeat-x; background-position:center bottom; padding-bottom:15px; margin-top:5px; margin-bottom:15px;}
+.main_lyb_text_list p { margin-left:20px; margin-right:20px; font-size:14px;}
+.main_lyb_text_list p span { color:#333;}
+.main_lyb_text_list p font a { color:#118b10; font-size:14px;}
+.main_lyb_hf { width:688px; border:1px solid #d9d9d9; padding-bottom:6px; background:#fff; margin-left:20px; margin-top:6px; font-size:14px;}
+.main_lyb_hf dl {margin-top:6px;}
+.main_lyb_hf dl dt { width:72px; float:left; color:#333; margin-left:10px; display:inline;}
+.main_lyb_hf dl dd { float:left; width:590px; color:#999;}
+.main_lyb_fy { padding-bottom:12px; text-align:right; padding-right:20px;}
+.main_teacher_jh { width:756px;}
+
+.main_left00 { float:left; width:656px;}
+/************************************************lx_advisory.php********************************/
+
+.main_xl_zxtw_box { width:490px; border:1px solid #a3a3a3; border-top:none; margin-left:13px; margin-bottom:15px;}
+.main_xl_zxtw_box_title00 { width:520px; height:29px; border-top:1px solid #a3a3a3; border-bottom:1px solid #a3a3a3;}
+.main_xl_zxtw_box_title { width:490px; height:27px; line-height:27px; background:#f4f4f4; border:1px solid #fff;}
+.main_xl_zxtw_box_title dl dt { float:left; width:200px; height:27px; overflow:hidden; padding-left:8px;}
+.main_xl_zxtw_box_title dl dd { float:right; width:200px; height:27px; overflow:hidden; text-align:right; padding-right:12px; color:#666;}
+.main_xl_zxtw_box_list00 { margin-bottom:12px;}
+.main_xl_zxtw_box_list { width:490px; border-bottom:1px dotted #8f8f8f; padding-bottom:10px;}
+.main_xl_zxtw_box_list_zxhf { text-align:right; padding-right:12px; color:#444;}
+.main_xl_zxtw_box_list dl { width:470px; margin-left:10px;}
+.main_xl_zxtw_box_list dl dt { font-weight:bold; margin-top:8px; margin-bottom:5px;}
+.main_xl_zxtw_box_list dl dd { background:#f4f4f4; padding:10px 5px; margin-left:50px;}
+.main_xl_zxtw_box_fy dl { height:40px; line-height:40px; margin-bottom:10px;}
+.main_xl_zxtw_box_fy dl dt { float:left; padding-left:8px;}
+.main_xl_zxtw_box_fy dl dd { float:right; padding-right:8px;}
+.main_xl_zxtw_box_fy dl dd span { color:#ff6015;}
+
+
+
+
+
+
+
+
+
