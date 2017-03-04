@@ -1,0 +1,28 @@
+<div class="main_news_left">
+        	<div class="main_news_left_box01">
+            	<div class="main_news_left_box01_title">
+           	    	<img src="images/downinfo.gif" />
+                </div>
+  </div>
+        	<div class="main_news_left_box02">
+            	<div class="main_news_left_box02_title"><span>热门信息</span></div>
+                <div class="main_news_left_box02_list">
+                	<ul>
+                  <?php
+						$sql="select * from ennews where nbool=1 order by ndate desc limit 5";
+                        $rs=mysql_query($sql);
+						if (mysql_num_rows($rs)>=1){
+	                    $i=0;
+						while ($row=mysql_fetch_array($rs,MYSQL_ASSOC)){						
+						$i=$i+1;
+						?>
+          <li><span><?php echo $i;?>.</span><a href="Education/xl_news_detail.php?id=<?php echo $row["nid"];?>" title="<?php echo $row["ntitle"];?>"><?php echo $row["ntitle"];?></a></li>
+						<?php 
+						}
+						}
+						mysql_free_result($rs);
+						?>
+                    </ul>
+                </div>
+            </div>
+        </div>

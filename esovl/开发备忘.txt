@@ -1,0 +1,24 @@
+school文件夹是放独立的模板学校文件。
+
+初步完成后，需要内部检测不足之处，记录下来，一条一条完善。
+
+wl_webset.php 信息设置的共用文件，调用是 wl_webset.php?id=数据库中z_id的值. 11/24
+
+
+根目录下，about放的是总站的介绍联系方式关于我拉，这些介绍性的页面。//12.17
+
+培训下频道页，新闻频分需要手写新分类ID，培训学校与培训超市为手写链接//03.28
+
+---------------------------------------------------------------------
+
+widows下用http.ini /linx下用.hacess文件
+
+
+需要解决编辑框大小的问题//2011.6.2
+研修信息设置出现更新错误正在更正中//2011.6.2
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/pngfix.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.boxCaption,.top_box,.logo');
+</script>

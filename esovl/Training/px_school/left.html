@@ -1,0 +1,67 @@
+<div class="school_mian_left">
+    <div class="school_mian_about">
+      <div class="school_about_top">
+        <div class="school_about_biaoti"><span>学校介绍</span><a href="jianjie.php">详细</a>...</div>
+      </div>
+      <div class="school_about_center">
+        <div class="school_about_neirong">
+          <?=strip_tags($Common->strCut($pxmb_xxjs,260))?>
+        ..</div>
+      </div>
+      <div class="school_about_bottom"><img src="images/school_30.jpg" width="265" height="6" /></div>
+    </div>
+    <div style="clear:both; height:12px;"></div>
+    <div class="school_mian_about">
+      <div class="school_about_top">
+        <div class="school_about_biaoti"><span>最新动态</span><a href="dongtai.php">更多</a>...</div>
+      </div>
+      <div class="school_about_center" style="height:232px;">
+        <div class="school_dongtai_liebiao">
+          <ul>
+           <?php
+			$res = $dblink->findAll('pxmbnews','',"pxs_name='".$_SESSION["pxs_name"]."'",'','6');
+			foreach($res as $row){?>
+	    <li><span><a href="dongtai_details.php?id=<?=$row["pxnid"]?>" title="<?=$row["pxntitle"]?>"><?php if (strlen($row["pxntitle"])>28){echo $Common->strCut($row["pxntitle"],24);}else{echo $row["pxntitle"];}?></a></span><?=$row["pxndate"]?></li>
+          <?php }?> 
+          </ul>
+        </div>
+      </div>
+      <div class="school_about_bottom"><img src="images/school_30.jpg" width="265" height="6" /></div>
+    </div>
+    <div style="clear:both; height:12px;"></div>
+    <div class="school_mian_about">
+      <div class="school_about_top">
+        <div class="school_about_biaoti"><span>报名流程</span></div>
+      </div>
+      <div class="school_about_center" style="height:116px;">
+        <div style="clear:both; padding:0 12px;"><?=strip_tags($Common->strCut($pxmb_bmlc,260))?></div>
+        
+      </div>	
+      <div class="school_about_bottom"><img src="images/school_30.jpg" width="265" height="6" /></div>
+    </div>
+    <div style="clear:both; height:12px;"></div>
+    <div class="school_mian_about">
+      <div class="school_about_top">
+        <div class="school_about_biaoti"><span>联系我们</span></div>
+      </div>
+      <div class="school_about_center" style="height:232px;">
+        <div style="clear:both; height:12px;"></div>
+        <div class="school_lianxi_dh">招生热线：</div>
+        <div class="school_lianxi_dh2"><?=$pxmb_tel?></div>
+        <div class="school_lianxi_dh">报名地址：</div>
+        <div class="school_lianxi_dh2"><?=$pxmb_adderss?></div>
+        <div class="school_lianxi_dh">电子邮箱：</div>
+        <div class="school_lianxi_dh2"><?=$pxmb_email?></div>
+        <div class="school_lianxi_dh">上课地址：</div>
+        <div class="school_lianxi_dh2"><?=$pxmb_skdz?></div>
+        <div class="school_lianxi_xuxian"></div>
+        <div class="school_lianxi_qq"><a href=tencent://message/?uin=<?=$pxmb_qq1?>&Site=一休教育网&Menu=yes title="在线咨询1"><img border="0" src=http://wpa.qq.com/pa?p=1:<?=$pxmb_qq1?>:4 align="top"/></a></div>
+        <div class="school_lianxi_laoshi"><?=$pxmb_tname1?></div>
+        <a href=tencent://message/?uin=<?=$pxmb_qq2?>&Site=一休教育网&Menu=yes title="在线咨询1"><div class="school_lianxi_qq"><img border="0" src=http://wpa.qq.com/pa?p=1:<?=$pxmb_qq2?>:4 align="top"/></div>
+        <div class="school_lianxi_laoshi">
+          <?=$pxmb_tname2?>
+        </div></a>
+      </div>
+      <div class="school_about_bottom"><img src="images/school_30.jpg" width="265" height="6" /></div>
+    </div>
+  </div>

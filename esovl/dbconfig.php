@@ -1,0 +1,9 @@
+<?php
+$config=array(
+	"dbms"=>"mysql",
+	"dbhost"=>"10.172.46.114",
+	"dbuser"=>"esovl",
+	"dbpwd"=>"Esovl2012",
+	"dbname"=>"esovldata"
+);
+?>

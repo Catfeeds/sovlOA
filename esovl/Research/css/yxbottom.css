@@ -1,0 +1,14 @@
+.bottom{background:#fff;width:950px;margin-top:12px;}
+.bottom_box01{width:950px;}
+.bottom_box01_top{width:950px;height:33px;line-height:33px;background-image:url(../images/yx_bottombg.jpg);}
+.bottom_box01_top dl dd a { color:#f00;}
+.bottom_box02{width:950px;text-align:center; height:50px; line-height:40px;}
+.bottom_box02 span{font-family:Arial;}
+.bottom_box01_top dl dt{width:68px;float:left;text-align:center;}
+.bottom_box01_top dl dt a{font-size:14px;color:#666;font-weight:bold;}
+.bottom_box01_top dl dd{width:780px;float:right; text-align:right; padding-right:12px;}
+.bottom_box01_top dl dd span{margin:0 8px; color:#f00;}
+.bottom_box01_list{width:950px;height:auto;background:url(../images/yx_bottom_mainbg.jpg) repeat-y;}
+.bottom_box01_list_01{width:24px;height:auto;float:left;line-height:24px;text-align:center;font-size:14px;color:#f00;margin-left:12px;padding:12px 0;display:inline;}
+.bottom_box01_list_02{ padding:6px; width:868px; margin-left:20px; float:left;}
+.bottom_box01_list_02 a {margin-right:6px;}

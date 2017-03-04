@@ -1,0 +1,4 @@
+@charset "utf-8";
+.bottom { width:950px; height:120px; border-top:2px solid #254592;}
+.bottom_text dl { text-align:center; margin-top:20px;}
+.bottom_text dl dt { margin-bottom:10px;}

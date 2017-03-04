@@ -1,0 +1,27 @@
+<div id="content1"></div>
+<div class="top_box01">
+  <div class="top_box01_00"><img src="<?=$z_website?>images/top01_left.jpg" /></div>
+  <div class="top_box01_center">
+    <?/*<div class="top_box01_center_text01"> 您好，<font color="red"><?php echo @$_SESSION["vip"];?></font> 欢迎光临<?php echo @$z_name;?>！</div>*/?>
+    <div class="top_box01_center_text02">
+<ul>
+<?php
+
+	if(@$user=Userlogin()){?>
+		<li><a href='/Vip/vip_index.php'>我的一休</a><span>|</span></li>
+		<li><a href='/about.php?cid=10'>帮助中心</a><span>|</span></li>
+        <li><a href='javascript:void(null);'>网站导航</a><span>|</span></li>
+        <li><a href='javascript:void(null);'><strong>上海站</strong>-选择城市</a></li>
+<? 	}else{ ?>
+		<li><a href='/vip_zc.php'>注册</a><span>|</span></li>
+        <li><a href='/vip_login.php'>登陆</a><span>|</span></li>
+        <li><a href='/vip/vip_index.php'>我的一休</a><span>|</span></li>
+        <li><a href='/about.php?cid=10'>帮助中心</a><span>|</span></li>
+        <li><a href='javascript:void(null);'>网站导航</a><span>|</span></li>
+        <li><a href='javascript:void(null);'><strong>上海站</strong>-选择城市</a></li>
+<?	}?>
+     </ul>
+    </div>
+</div>
+<div class="top_box01_00"><img src="/images/top01_right.jpg" /></div>
+</div>

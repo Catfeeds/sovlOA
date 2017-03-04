@@ -1,0 +1,51 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.4
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2011 年 06 月 08 日 07:11
+-- 服务器版本: 5.0.41
+-- PHP 版本: 5.2.9-2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 数据库: `test_data`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `pxbclass`
+--
+
+CREATE TABLE IF NOT EXISTS `pxbclass` (
+  `pb_id` int(10) NOT NULL auto_increment,
+  `pb_title` varchar(100) NOT NULL,
+  `pb_link` varchar(100) default NULL,
+  `pb_pindao` varchar(100) NOT NULL COMMENT '代表所属的频道',
+  PRIMARY KEY  (`pb_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='培误大类表' AUTO_INCREMENT=20 ;
+
+--
+-- 转存表中的数据 `pxbclass`
+--
+
+INSERT INTO `pxbclass` (`pb_id`, `pb_title`, `pb_link`, `pb_pindao`) VALUES
+(1, '外语', NULL, '外语频道'),
+(2, '日语', '', '外语频道'),
+(3, '小语种', '', '外语频道'),
+(4, '职业资格', '', '职业频道'),
+(5, '会计', '', '职业频道'),
+(6, '早教', '', '早教频道'),
+(7, '少儿', '', '少儿频道'),
+(8, '中学生辅导', '', '中学生辅导'),
+(9, '高考', '', '高考频道'),
+(10, '艺术体育', '', '艺术体育'),
+(19, 'dfghfgh', NULL, '高考频道');
